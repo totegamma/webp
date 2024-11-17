@@ -96,6 +96,3 @@ func Decode(r io.Reader) (m image.Image, err error) {
 	return
 }
 
-func init() {
-	image.RegisterFormat("webp", "RIFF????WEBPVP8", Decode, DecodeConfig)
-}
